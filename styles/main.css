@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'heading-reg';
+  src: url('fonts/Munged-Reg.eot');
+  src: url('fonts/Munged-Reg.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Munged-Reg.woff') format('woff'),
+    url('fonts/Munged-Reg.ttf') format('truetype'),
+    url('fonts/Munged-Reg.svg#fonts/Munged-Reg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heading-bold';
+  src: url('fonts/Munged-Bold.eot');
+  src: url('fonts/Munged-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Munged-Bold.woff') format('woff'),
+    url('fonts/Munged-Bold.ttf') format('truetype'),
+    url('fonts/Munged-Bold.svg#fonts/Munged-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'body-reg';
+  src: url('fonts/Graphik-Regular.eot');
+  src: url('fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Graphik-Regular.woff') format('woff'),
+    url('fonts/Graphik-Regular.ttf') format('truetype'),
+    url('fonts/Graphik-Regular.svg#fonts/Graphik-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1, h2, h3 {
+  font-family: 'heading-bold', georgia, serif;
+}
+
+h4, h5, h6, p, ul, li {
+  font-family: 'body-reg', helvetica, sans-serif;
+}
+
+.column, .columns {
+  margin-left: 0%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  color: blue;
+}
+
+
+/*-------------  LAYOUT ---------------*/
+
+
+.bg-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  background-color: white;
+  width: 100%;
+  position: relative;
+
+}
+
+.new-quote {
+  padding: 30px 0;
+  background-color: white;
+}
+
+.new-quote:hover {
+  cursor: crosshair;
+  background-color: #efefef;
+}
+
+.top {
+  height: 200px;
+}
+
+.quote-btn, .quote-box, .author-box {
+  width: 65.3333333333%;
+  margin: 0 auto;
+}
+
+.blog-heading {
+  margin-top: 10%;
+  margin-bottom: 10px; 
+}
+
+.quote-box {
+  margin-top: 25px;
+  margin-bottom: 10px;
+
+}
+
+.author-box {
+  margin-bottom: 30px;
+}
+
+
+/*-------------  SPECIFICS ---------------*/
+
+.author-name {
+  text-align: right;
+
+}
+
+.new-quote {
+  text-align: center;
+
+}
+
+/*-------------  RESPONSIVE ---------------*/
+
+
+@media (max-width: 900px) {
+
+  .quote-btn, .quote-box {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 440px) {
+
+  h1 {
+    font-size: 3.8rem;
+  }
+
+}
+
+
