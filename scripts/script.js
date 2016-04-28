@@ -16,8 +16,10 @@ function newQuote(e) {
     return data.json();
   })
   .then(function(data) {
+    //call function again if the response quote is the same as the old one.
+    //Otherwise change content of quote to the new quote.
     if(data.quote === window.__quote__) {
-      newQuote(window.__quote__);
+      newQuote();
     } else {
       document.getElementById("quote-box").innerHTML = data.quote;
       document.getElementById("author-box").innerHTML = '—' + data.author;
@@ -26,11 +28,14 @@ function newQuote(e) {
     }
   })
   .catch(function(error) {
+    //add the error message to the error-div
     document.getElementById("error-div").innerHTML = errorMessage;
   });
 }
 
 window.onload = function() {
+  //get a new quote when the window loads
   newQuote();
+  //assign newQuote to the "new quote" button
   document.getElementById("quote-btn").onclick = newQuote;
 }
