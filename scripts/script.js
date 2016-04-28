@@ -1,5 +1,5 @@
 var quote = '';
-var errorMessage = 'Oops! There was an error getting the quote.'
+var errorMessage = 'Oops! There was an error getting the quote.';
 
 function newQuote(e) {
   e && e.preventDefault();
