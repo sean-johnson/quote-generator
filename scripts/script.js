@@ -21,15 +21,15 @@ function newQuote(e) {
     if(data.quote === window.__quote__) {
       newQuote();
     } else {
-      document.getElementById("quote-box").innerHTML = data.quote;
-      document.getElementById("author-box").innerHTML = '—' + data.author;
-      document.getElementById("error-div").innerHTML = '';
+      document.getElementById("quote-box").innerText = data.quote;
+      document.getElementById("author-box").innerText = '—' + data.author;
+      document.getElementById("error-div").innerText = '';
       window.__quote__ = data.quote;
     }
   })
   .catch(function(error) {
     //add the error message to the error-div
-    document.getElementById("error-div").innerHTML = errorMessage;
+    document.getElementById("error-div").innerText = errorMessage;
   });
 }
 
