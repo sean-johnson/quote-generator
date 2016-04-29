@@ -17,6 +17,8 @@ function newQuote(e) {
   .then(function(data) {
     //call function again if the response quote is the same as the old one.
     //Otherwise change content of quote to the new quote.
+
+	console.log();
     if(data.quote === quote) {
       newQuote();
     } else {

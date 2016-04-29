@@ -57,6 +57,16 @@ h5 {
   font-size: 1.8rem;
 }
 
+button {
+  all: unset;
+  font-family: 'body-reg', helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+
+body {
+  background-color: blue;
+}
+
 /*-------------  LAYOUT ---------------*/
 
 
@@ -73,37 +83,33 @@ h5 {
 
 }
 
-.new-quote {
-  padding: 30px 0;
-  background-color: white;
-}
-
-.new-quote:hover {
-  cursor: crosshair;
-  background-color: #efefef;
+.row {
+  width: 65.3333333333%;
+  margin: 0 auto;
 }
 
 .top {
   height: 200px;
 }
 
-.quote-btn, .quote-box, .author-box {
-  width: 65.3333333333%;
+.quote-btn, .quote-box, .author-box, {
   margin: 0 auto;
 }
 
 .quote-btn {
   text-decoration: none;
   color: gray;
+  background-color: #efefef;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
 }
 
 .quote-btn:hover {
-  color: blue;
-}
-
-.blog-heading {
-  margin-top: 10%;
-  margin-bottom: 10px;
+  color: white;
+  background-color: blue;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .quote-box {
@@ -113,7 +119,7 @@ h5 {
 }
 
 .author-box {
-  margin-bottom: 30px;
+  margin: 20px 0;
 }
 
 .error-div {
@@ -137,8 +143,9 @@ h5 {
 
 @media (max-width: 900px) {
 
-  .quote-btn, .quote-box {
-    width: 90%;
+  .row {
+    width: 100%;
+    margin: 0 auto;
   }
 
 }
