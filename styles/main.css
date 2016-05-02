@@ -64,7 +64,7 @@ button {
 }
 
 body {
-  background-color: blue;
+  background-color: #ededed;
 }
 
 /*-------------  LAYOUT ---------------*/
@@ -108,7 +108,7 @@ body {
 .quote-btn:hover {
   color: white;
   background-color: blue;
-  border-radius: 2px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
