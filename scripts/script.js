@@ -41,13 +41,12 @@ document.addEventListener('DOMContentLoaded', function(e) {
   document.getElementById('quote-btn').onclick = newQuote;
 });
 
-    //function below cycles through a colour array and changes the background css when the quote button is clicked.
-    var colors = ['#3498db', '#e67e22', '#16a085', '#f39c12', '#2c3e50', '#7f8c8d', '#2980b9'];
-    var i = 0;
+  //function below cycles through a colour array and changes the background css when the quote button is clicked.
+  var colors = ['#3498db', '#e67e22', '#16a085', '#f39c12', '#2c3e50', '#7f8c8d', '#2980b9'];
+  var i = 0;
 
-    function changeColour() {
-      console.log("change Colour worked");
-      var x = document.getElementById("bg-colour")
-      x.style.backgroundColor = colors[i++];
-      if (i == colors.length) i = 0;
-    };
+  function changeColour() {
+    var x = document.getElementById("bg-colour")
+    x.style.backgroundColor = colors[i++];
+    if (i == colors.length) i = 0;
+  };
