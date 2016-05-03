@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
   document.getElementById('quote-btn').onclick = newQuote;
 });
 
-  //function below cycles through a colour array and changes the background css when the quote button is clicked.
-  var colors = ['#3498db', '#e67e22', '#16a085', '#f39c12', '#2c3e50', '#7f8c8d', '#2980b9'];
+//function below cycles through a colour array and changes the background css when the quote button is clicked.
+  var colors = ['#31E981', '#4D6CFA', '#F1C40F', '#F75C03', '#9649CB', '#FF5376', '#2274A5', '#F0544F'];
   var i = 0;
 
   function changeColour() {
