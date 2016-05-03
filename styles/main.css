@@ -64,7 +64,7 @@ button {
 }
 
 body {
-  background-color: #ededed;
+ 
 }
 
 /*-------------  LAYOUT ---------------*/
@@ -76,11 +76,14 @@ body {
   height: 100%;
 }
 
+#bg-colour {
+  background-color: #e43567;
+}
+
 .content {
-  background-color: white;
   width: 100%;
   position: relative;
-
+  color: white;
 }
 
 .row {
@@ -89,7 +92,7 @@ body {
 }
 
 .top {
-  height: 200px;
+  height: 225px;
 }
 
 .quote-btn, .quote-box, .author-box, {
@@ -100,16 +103,16 @@ body {
   text-decoration: none;
   color: gray;
   background-color: #efefef;
-  padding: 30px 0;
+  padding: 30px;
+  border-radius: 50px;
   text-align: center;
-  width: 100%;
+  margin: 0 25%;
 }
 
 .quote-btn:hover {
   color: white;
   background-color: blue;
-  border-radius: 4px;
-  cursor: pointer;
+   cursor: pointer;
 }
 
 .quote-box {

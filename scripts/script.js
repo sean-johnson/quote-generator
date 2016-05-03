@@ -18,7 +18,6 @@ function newQuote(e) {
     //call function again if the response quote is the same as the old one.
     //Otherwise change content of quote to the new quote.
 
-	console.log();
     if(data.quote === quote) {
       newQuote();
     } else {
@@ -40,4 +39,19 @@ document.addEventListener('DOMContentLoaded', function(e) {
   newQuote();
   //assign newQuote to the "new quote" button
   document.getElementById('quote-btn').onclick = newQuote;
+  document.getElementById('quote-btn').onclick = changeColour();
 });
+
+//function below cycles through a colour array and changes the background css when the quote button is clicked.
+
+var colors = ['#3498db', '#e67e22', '#16a085', '#f39c12', '#2c3e50', '#7f8c8d', '#2980b9'];
+var i = 0;
+
+function changeColour() {
+  console.log("change Colour worked");
+  var x = document.getElementById("bg-colour")
+  x.style.backgroundColor = '#3498db';
+  if (i == colors.length) i = 0;
+};
+
+
